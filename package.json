@@ -1,12 +1,12 @@
 {
   "name": "generator-gw-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Good Work Starter",
   "homepage": "simplygoodwork.com",
   "author": {
-    "name": "Covington Doan",
-    "email": "covington@simplygoodwork.com",
-    "url": "covingtondoan.com"
+    "name": "Good Work",
+    "email": "hello@simplygoodwork.com",
+    "url": "simplygoodwork.com"
   },
   "files": [
     "generators"
