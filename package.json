@@ -1,5 +1,5 @@
 {
-  "name": "generator-gw-starter",
+  "name": "generator-gwp-starter",
   "version": "0.0.1",
   "description": "Good Work Starter",
   "homepage": "simplygoodwork.com",
@@ -31,7 +31,7 @@
     "gulp-nsp": "^2.1.0",
     "gulp-coveralls": "^0.1.0"
   },
-  "repository": "simplygoodwork/generator-gw-starter",
+  "repository": "simplygoodwork/generator-gwp-starter",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

@@ -11,17 +11,15 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the first-rate ' + chalk.red('generator-gw-starter') + ' generator!'
+      'Let\'s get this party started!'
     ));
 
     var prompts = [{
       name: 'projectName',
-      message: 'What\'s the name of your project?',
-      default: 'GW Starter'
+      message: 'What\'s the name of the project?',
     }, {
       name: 'dbLocalUrl',
       message: '[LOCAL] Domain of your local installation',
-      default: 'gw-starter.dev'
     }, {
       name: 'dbLocalServer',
       message: '[LOCAL] Name of your local database server',
@@ -37,21 +35,6 @@ module.exports = yeoman.generators.Base.extend({
     }, {
       name: 'dbLocalName',
       message: '[LOCAL] Name of your local database'
-    }, {
-      name: 'dbStagingUrl',
-      message: '[STAGING] Domain of your staging installation'
-    }, {
-      name: 'dbStagingServer',
-      message: '[STAGING] Name of your staging database server'
-    }, {
-      name: 'dbStagingUser',
-      message: '[STAGING] Name of your staging database user'
-    }, {
-      name: 'dbStagingPassword',
-      message: '[STAGING] Password of your staging database user'
-    }, {
-      name: 'dbStagingName',
-      message: '[STAGING] Name of your staging database'
     }];
 
     this.prompt(prompts, function (props) {
@@ -62,12 +45,6 @@ module.exports = yeoman.generators.Base.extend({
       this.dbLocalUser = props.dbLocalUser;
       this.dbLocalPassword = props.dbLocalPassword;
       this.dbLocalName = props.dbLocalName;
-
-      this.dbStagingUrl = props.dbStagingUrl;
-      this.dbStagingServer = props.dbStagingServer;
-      this.dbStagingUser = props.dbStagingUser;
-      this.dbStagingPassword = props.dbStagingPassword;
-      this.dbStagingName = props.dbStagingName;
 
       done();
     }.bind(this));
@@ -83,24 +60,18 @@ module.exports = yeoman.generators.Base.extend({
       password: this.dbLocalPassword,
       dbname: this.dbLocalName
     };
-    var dbStaging = {
-      server: this.dbStagingServer,
-      user: this.dbStagingUser,
-      password: this.dbStagingPassword,
-      dbname: this.dbStagingName
-    };
     var domains = {
-      local: this.dbLocalUrl,
-      staging: this.dbStagingUrl
+      local: this.dbLocalUrl
     };
 
     // Download and extract Craft
     var done = this.async();
+    console.log('\nInstalling Craft...');
     this.extract(craftUrl, '.', {mode: '755'}, function(error) {
         if (error) {
             console.log(error);
         } else {
-            console.log('extracted');
+            console.log('Craft installed.');
             done();
         }
     });
