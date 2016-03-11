@@ -1,5 +1,5 @@
 # generator-gw-starter [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Good Work Starter
+> Good Work Craft Starter
 
 ## Installation
 
@@ -22,7 +22,7 @@ Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he
 
 ## License
 
-MIT © [Covington Doan](covingtondoan.com)
+MIT
 
 
 [npm-image]: https://badge.fury.io/js/generator-gw-starter.svg
