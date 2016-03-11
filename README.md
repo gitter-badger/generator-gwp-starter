@@ -1,4 +1,6 @@
 # generator-gw-starter [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
+[![Join the chat at https://gitter.im/simplygoodwork/generator-gwp-starter](https://badges.gitter.im/simplygoodwork/generator-gwp-starter.svg)](https://gitter.im/simplygoodwork/generator-gwp-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > Good Work Craft Starter
 
 ## Installation
